@@ -1,0 +1,386 @@
+body{
+    
+    width:100%;
+    height: 100%;
+    background-color: none;
+}
+
+.top-nav{
+    width:100%;
+    background-color: gray;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.top-nav ul li{
+    list-style: none;
+    display: flex;
+}
+.top-nav ul li a{
+    text-decoration: none;
+    padding: 5px 30px;
+}
+.ask-a-question{
+    width: 100%;
+    height:500px;
+    position: absolute;
+    top: 60px;
+    background-color:rgb(3, 2, 2);
+   text-align: center;
+   color: whitesmoke;
+   font-size: x-large;
+}
+.div-for-question{
+    width: 100%;
+    height:500px;
+    position: absolute;
+    top: 560px;
+    background-color:rgb(121, 43, 43);
+}
+.btn-view-image{
+    visibility: hidden;
+    
+}
+.aside-question-txtarea{
+    position: absolute;
+    left: 20px;
+}
+.pic-upload{
+width: 500px;
+height: 400px;
+position: absolute;
+right: 40px;
+background-color:rgb(3, 2, 2);
+}
+.ask-a-question .btn-ask a{
+    text-decoration: none;
+    color: black;
+}
+.btn-ask,.btn-submit-question{
+    background-color: #04AA6D;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+footer{
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: black;
+width: 100%;
+height: 60px;
+color: whitesmoke;
+   text-align: center;
+}
+/*for form sign up*/
+.div-frm-sign-up{
+    position: relative;
+    top: 70px;
+    background-color:whitesmoke;
+    height: 500px;
+    width:100%;
+    text-align:center;
+    color: black;
+    border-radius: 20px;
+}
+.div-frm-sign-up h1{
+    position: absolute;
+    top: 30px;
+    left: 30%;
+    }
+.frm-sign-up{
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    background-color:white;
+    height: 350px;
+    width:70%;
+    text-align:center;
+    border-radius: 30px;
+    margin: 0;
+    -ms-transform: translateX(-50%);
+   transform:translateX(-50%);
+}
+.btn-sign-up{
+    border-radius: 10px;
+    width: 200px;
+    height: 40px; 
+    background-color: #04AA6D;
+    font-size: 20px;
+}
+.frm-sign-up fieldset{
+    display: block;
+    border: 2px groove (internal value);
+}
+.btn-login-sign-in{
+    position: absolute;
+    right: 100px;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px; 
+    background-color: #04AA6D;
+    font-size: 20px;
+    top: 15px;
+}
+.top-nav h1{
+    position: absolute;
+    left: 200px;
+    font-size: 30px;
+    top: 10px;
+}
+/*COMMENTS FOR LOGIN FORM*/
+.div-login-frm-wrapper{
+    position: absolute;
+    top: 50px;
+    left: 600px;
+    background-color:ivory;
+    height: 450px;
+    width: 600px;
+    text-align:center;
+    color: white; 
+}
+.frm-login{
+    font-size: 30px;
+}
+.frm-login a{
+    font-size: 30px;
+   text-decoration: none;
+}
+.askit-zim-div{
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    width: 450px;
+    height: 600px;
+    background-color: beige;
+}
+.askit-zim-h1{
+    font-weight: bold;
+    color: cornflowerblue;
+    text-align: center;
+}
+.btn-login{
+    border-radius: 10px;
+    width: 80px;
+    height: 30px; 
+}
+/* FOR SMALL PHONES*/
+@media screen and (max-width:320px) {
+    .div-login-frm-wrapper{
+        position: absolute;
+        top: 250px;
+        left: 5px;
+        right: 5px;
+        background-color:ivory;
+        height: 150px;
+        width:310px;
+        text-align:center;
+        color: white; 
+    }
+    .frm-login{
+        font-size: 30px;
+    }
+    .frm-login a{
+        font-size: 30px;
+       text-decoration: none;
+    }
+    .askit-zim-div{
+        position: absolute;
+        top: 25px;
+        left: 5px;
+        right: 5px;
+        width: 310px;
+        height: 100px;
+        background-color: beige;
+        font-size:16px;
+    }
+    .askit-zim-h1{
+        font-weight: bold;
+        color: cornflowerblue;
+        text-align: center;
+    }
+    .btn-login{
+        border-radius: 10px;
+        width: 80px;
+        height: 30px; 
+    }
+    .Create-New-Account{
+        border-radius: 10px;
+        position: absolute; 
+        text-align: center;
+        left: 100px;
+
+    }
+}
+
+/*FOR MOST PHONES PORTRAIT VIEW*/
+@media screen and (min-width:320px) and  (max-width:378px) {
+    .div-login-frm-wrapper{
+        position: absolute;
+        top: 250px;
+        left: 5px;
+        background-color:ivory;
+        height: 15vw;
+        width:350px;
+        text-align:center;
+        color: white; 
+    }
+    .frm-login{
+        font-size: 30px;
+    }
+    .frm-login a{
+        font-size: 30px;
+       text-decoration: none;
+    }
+    .askit-zim-div{
+        position: absolute;
+        top: 25px;
+        left: 30px;
+        width: 350px;
+        height: 100px;
+        background-color: beige;
+        font-size:16px;
+    }
+    .askit-zim-h1{
+        font-weight: bold;
+        color: cornflowerblue;
+        text-align: center;
+    }
+    .btn-login{
+        border-radius: 10px;
+        width: 80px;
+        height: 30px; 
+    }
+}
+
+/*FOR LOW RESOLUTION TABLETS, MOBILE PHONES IN LANDSCAPE MODE*/
+
+@media screen and (min-width:379px) and (max-width:425px) {
+    .div-login-frm-wrapper{
+        position: absolute;
+        top: 250px;
+        left: 5px;
+        background-color:ivory;
+        height: 150px;
+        width:400px;
+        text-align:center;
+        color: white; 
+    }
+    .frm-login{
+        font-size: 30px;
+    }
+    .frm-login a{
+        font-size: 30px;
+       text-decoration: none;
+    }
+    .askit-zim-div{
+        position: absolute;
+        top: 25px;
+        left: 30px;
+        width: 400px;
+        height: 100px;
+        background-color: beige;
+        font-size:16px;
+    }
+    .askit-zim-h1{
+        font-weight: bold;
+        color: cornflowerblue;
+        text-align: center;
+    }
+    .btn-login{
+        border-radius: 10px;
+        width: 80px;
+        height: 30px; 
+    }
+}
+/*for tablets, Ipads*/
+
+@media screen and (min-width:426px) and (max-width:470px) {
+    .div-login-frm-wrapper{
+        position: absolute;
+        top: 250px;
+        left: 5px;
+        background-color:ivory;
+        height: 15vw;
+        width:450px;
+        text-align:center;
+        color: white; 
+    }
+    .frm-login{
+        font-size: 30px;
+    }
+    .frm-login a{
+        font-size: 30px;
+       text-decoration: none;
+    }
+    .askit-zim-div{
+        position: absolute;
+        top: 25px;
+        left: 30px;
+        width: 450px;
+        height: 100px;
+        background-color: beige;
+        font-size:16px;
+    }
+    .askit-zim-h1{
+        font-weight: bold;
+        color: cornflowerblue;
+        text-align: center;
+    }
+    .btn-login{
+        border-radius: 10px;
+        width: 80px;
+        height: 30px; 
+    }
+}
+
+@media screen and (min-width:471px) and (max-width:530px) {
+    .div-login-frm-wrapper{
+        position: absolute;
+        top: 250px;
+        left: 5px;
+        background-color:ivory;
+        height: 15vw;
+        width:500px;
+        text-align:center;
+        color: white; 
+    }
+    .frm-login{
+        font-size: 30px;
+    }
+    .frm-login a{
+        font-size: 30px;
+       text-decoration: none;
+    }
+    .askit-zim-div{
+        position: absolute;
+        top: 25px;
+        left: 30px;
+        width: 500px;
+        height: 100px;
+        background-color: beige;
+        font-size:16px;
+    }
+    .askit-zim-h1{
+        font-weight: bold;
+        color: cornflowerblue;
+        text-align: center;
+    }
+    .btn-login{
+        border-radius: 10px;
+        width: 80px;
+        height: 30px; 
+    }
+}
